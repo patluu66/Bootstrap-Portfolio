@@ -9,29 +9,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <style>
       body {
-        background-color: silver;
+        background-color: black;
+        font-family: 'Lobster Two', cursive;
       }
 
       #nameTag {
         background-color: #4aaaa5;
         text-align: center;
         width: 250px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left: 35px;
       }
-      
-      .row {
-        margin-bottom: 30px;
+
+      #aboutMeText {
+        color: #4aaaa5;
+        margin: 10px 10px 10px 10px;
+      }
+
+      #connectMeText {
+        margin: 0px 10px 10px 10px;
+        padding-top: 10px;
       }
 
       .aboutMe {
         background-color: white;
+        height: 600px;
+        margin: 30px 30px 30px 50px;
       }
 
       .nameMenu {
         background-color: white;
+        height: 84px;
+      }
+
+      .connectMe {
+        background-color: white;
+        color: #4aaaa5;
+        padding-bottom: 10px;
+        width: 210px;
+        margin-left: 35px;
+        margin-top: 30px;
+      }
+
+      .panel-heading {
+        margin: 10px 10px 10px 10px;
+      }
+
+      .panel-body {
+        margin: 0px 10px 10px 10px;
+      }
+
+      .footerTag {
+        background-color: #666666;
+        border-top: 10px solid #4aaaa5;
+        margin-top: 30px;
+      }
+
+      footer {
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .justify-content-end {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .container {
+        background-color: silver;
       }
 
     </style>
@@ -50,13 +107,13 @@
         <div class="col">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link active" href="index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -64,32 +121,50 @@
       </div>
 
       <div class="row">
-
         <div class="col aboutMe">
-          <h3>About Me</h3>
+          <h3 id="aboutMeText">About Me</h3>
           <hr>
-          <div class="card" style="width: 20rem;">
+          <!-- <div class="card" style="width: 30rem;"> -->
+          <div class="card" style="width: 90%;">
             <img class="card-img-top" src="assets/images/Patrick.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">I'm currently attending UCBerkeley Coding Bootcamp and want to be a full stack developer. I'm passionate about solving advance computer science problems and building beautiful applications for web, mobile, and tablet. 
+              </p>
             </div>
 
           </div>
-           <br>
         </div>
 
         <div class="col">  
-          <div class="panel panel-default">
+          <div class="panel connectMe">
             <div class="panel-heading">
-              Panel heading without title
+              <h3 id="connectMeText">Connect with Me</h3>
+              <hr>
             </div>
             <div class="panel-body">
-              Panel content
+              <a href="https://github.com/patluu66">
+                <img src="assets/images/github.png" alt="Mountain View" style="width:50px;height:50px;">
+              </a>
+              
+              <a href="https://www.linkedin.com/in/patrick-luu-baa93014/">
+                <img src="assets/images/linkedin2.png" alt="Mountain View" style="width:50px;height:50px;">
+              </a>
+              
+              <a href="https://stackoverflow.com/users/7864644/patrick-luu">
+                <img src="assets/images/stackoverflow.png" alt="Mountain View" style="width:50px;height:50px;">
+              </a>
             </div>
           </div>
         </div>
-
       </div>
+
+      <div class="row footerTag">
+        <footer>©Copyright 2017 Patrick Luu</footer>
+      </div>  
+
+
+
+
     </div>
   
 

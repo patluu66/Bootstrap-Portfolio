@@ -54,8 +54,14 @@
           <hr>
           <form action="/action_page.php">
             Name<br><input type="text" name="Name" value="John Smith"><br>
+
             Email<br><input type="text" name="Email" value="example@gmail.com"><br>
-            Message<br><textarea rows="12" cols="50%" name="comment" form="usrform">Enter text here...</textarea><br>
+
+            <div class="form-group">
+              <label for="comment">Message:</label>
+              <textarea class="form-control" rows="10" id="comment"></textarea>
+            </div>
+
             <input type="submit" value="Submit">
           </form>
         </div>

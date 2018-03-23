@@ -1,5 +1,5 @@
 
-@media all and (min-width: 150px) {
+@media all and (min-width: 100px) {
   .container2 {
   display: flex;
   /*color: red;*/

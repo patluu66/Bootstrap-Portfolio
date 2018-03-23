@@ -9,7 +9,7 @@
 }
 
 /*#navbar-light {
-  
+
 }*/
 
 .box1 {
@@ -24,10 +24,10 @@
 #nameTag {
   background-color: #4aaaa5;
   text-align: center;
-  width: 250px;
+  width: 200px;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 #aboutMeText {

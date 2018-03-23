@@ -8,6 +8,10 @@
   }
 }
 
+/*#navbar-light {
+  
+}*/
+
 .box1 {
   flex: 2;
 }
@@ -44,7 +48,7 @@
   background-color: white;
   height: 100%;
   width: 100%;
-  margin: 30px 20px 30px 50px;
+  margin: 30px 20px 30px 20px;
   padding-bottom: 20px; 
 }
 
@@ -109,8 +113,8 @@ footer {
 
 .container {
   background-color: silver;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
   /*display: flex;*/
   /*flex-wrap: nowrap;*/
   

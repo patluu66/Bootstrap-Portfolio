@@ -31,6 +31,10 @@
   margin: 10px 10px 20px 10px;
 }
 
+#bodyItem {
+  margin: 10px 10px 10px 10px;
+}
+
 #connectMeText {
   margin: 0px 10px 20px 10px;
   padding-top: 10px;
@@ -40,7 +44,7 @@
   background-color: white;
   height: 100%;
   width: 100%;
-  margin: 30px 10px 30px 50px;
+  margin: 30px 20px 30px 50px;
   padding-bottom: 20px; 
 }
 

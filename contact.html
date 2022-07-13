@@ -12,7 +12,55 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+    
+    <script>
+      function postContact() {
+        alert("Hello! I am an alert box!!");
 
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:9090/jpa/contact");
+
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+
+        xhr.onload = () => console.log(xhr.responseText);
+
+        let data = `{
+          "id": null,
+          "name": "Test from static page",
+          "address": "Home page Testing",
+          "dateStamp": "2022-07-03",
+          "email": "Elon@Tesla.com",
+          "phone": "(510) 654-7888",
+          "message": "I like you website",
+          "phoneBackup": -5156
+        }`;
+
+        xhr.send(data);
+      }
+
+
+      function getContact() {
+        var xhr = new XMLHttpRequest();     
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState != 4) return;
+
+            if (this.status == 200) {
+                var data = JSON.parse(this.responseText);
+                console.log(data);
+            }
+
+            // end of state change: it can be after some time (async)
+        };
+
+        xhr.open('GET', 'http://localhost:9090/contacts', true);
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+        xhr.send();
+      }
+
+    </script>
 
   </head>
   <body>
@@ -82,7 +130,9 @@
             <input type="submit" value="Send">
             <input type="reset" value="Reset">
           </form>
-
+  
+          <button onclick="getContact()">GET contact</button>
+          <button onclick="postContact()">POST contact</button>
 
 
 
